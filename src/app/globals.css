@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.typing-effect {
+  display: inline-block;
+  
+  border-right: 2px solid rgb(0, 0, 0); /* Cursor effect */
+  white-space: nowrap;
+  
+  overflow: hidden;
+  animation: blinkCursor 0.7s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from { border-right-color: transparent; }
+  to { border-right-color: black; }
+}
+.ok{
+display: flex;
+flex-wrap: wrap;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+
+.navbar{
+  width: auto;
+  height: 60px;
+  background-color: rgb(8, 8, 8);
+  color:white
+}
+
+.navLogo{
+  height: 50px;
+  width: 110px;
+
+}
+.logo{
+  background-image: url("/amazon/amazon_logo.png");
+  height: 130%;
+  width: 100%;
+  background-size: cover;
+}
+.border{
+border: 2px solid transparent;
+border-radius: 10px;
+}
+
+:hover.border{
+  border: 2px solid white;
+  border-radius: 10px;
+  
+}
+.searchBar{
+  height: 40px;
+  width: 670px;
+  background-color:white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.heo{
+  background-image: url("/amazon/hero.jpg");
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+}
